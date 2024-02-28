@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-rows:  80vh repeat(5 , max-content);
+    grid-template-columns: repeat(6 , 1fr);
+}
+.header{
+   
+    background-image: linear-gradient(70deg, #000000 , #0000) , url(img/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6470.jpg);
+    grid-column: 1/-1;
+   background-size: cover;
+   display: grid;
+   grid-template-rows: repeat(3, min-content);
+   grid-gap: 20px;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+ 
+    
+}
+.hedear1{
+    font-size: 30px;
+    color: white;
+   
+}
+
+
+.header2{
+    color: white;
+
+}
+.heder-text{
+    color: rgb(255, 136, 0);
+}
+.header-btn{
+    padding: 13px 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+    justify-self: center;
+}
+.header-btn:hover{
+    color: orangered;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.story{
+    margin-top: 2rem;
+    grid-column: 1/-1;
+}
+.img{
+    width: 100%;
+    height: 240px;
+    border-radius: 9px;
+}
+.story-imeags{
+  
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(200px , 1fr) ) ;
+}
+
+.section-titel{
+    text-align: center;
+    padding: 25px;
+    font-size: 27px;
+    color: rgb(255, 136, 0);
+}
+.section-titel::before,
+.section-titel::after{
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+   
+    vertical-align: middle;
+   width: 5%;
+}
+.section-titel::before{
+    right: .5rem;
+    margin-left: -50%;
+}
+.section-titel::after{
+    left: .5rem;
+    margin-right: -50%;
+}
+
+
+
+
+
+.service{
+    margin-top: 2rem;
+    grid-column: 2/6;
+    display: grid;
+}
+
+.service-section{
+    display: grid;
+    grid-gap: 1rem;
+    grid-row-gap:5rem ;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+    padding-bottom: 7rem;
+}
+.service-img {
+    width: 100%;
+    height: 240px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+.service-text{
+    text-align: center;
+    font-size: 18px;
+    margin-top:6px;
+    font-weight: normal;
+}
+.text{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+.Reserve{
+    margin-top: 1rem;
+    grid-column: 1/-1;
+}
+.left-box_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.left-box{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    margin-left: 90px;
+    margin-right: -110px;
+    margin-bottom: 10px;
+}
+
+.reserv-section{
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr) 50px;
+    grid-template-rows: 1fr;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(70deg, #000000 , #0000) , url(img/pexels-photo-1.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/-1;
+}
+.right{
+    background-color: hsla(0, 0%, 0%, 0.555);
+    color: white;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 2fr 1fr repeat(3,1fr) 2fr;
+    padding-top:30px ;
+}
+.left{
+    background-color: rgba(255, 255, 255, 0.692);
+    grid-column: 3/6;
+    display:  grid;
+    grid-template-rows: .5fr 1fr .5fr 1fr 2fr;
+    padding: 10px;
+}
+
+.left-titel{
+    color: rgb(255, 136, 0);
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+
+}
+.parantes{
+    color: rgb(255, 136, 0);
+    font-weight: normal;
+    padding: 2px;
+
+}
+.Reserve-branch{
+    color: rgb(255, 136, 0);
+    font-family: 'Pacifico', cursive;
+
+}
+.order-text{
+    align-self: center;
+    font-family: 'Pacifico', cursive;
+font-weight: normal;
+}
+@media screen  and(max-width:932px){
+    .left{
+        font-size: 10px;
+
+    }
+ .right{
+    font-size: 13px;
+ }
+ .left-box{
+    padding:0 ;
+    margin: 0;
+    
+ }
+}
+
+
+
+
+
+.gollery{
+    grid-column: 1/-1;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.gollery-section{
+    display: grid;
+   
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 240px);
+    grid-template-areas: "gollery1 gollery1 gollery2" "gollery3 gollery4 gollery2 " "gollery3 gollery5 gollery5";
+    padding: 20px 50px;
+    grid-gap: 1rem;
+}
+.gollrey1{
+
+    background-image: url("/img/photo-1213271.jpeg");
+    grid-area: gollery1;
+}
+.gollrey2{
+    grid-area: gollery2;
+    background-image: url(/);
+}
+.gollrey3{
+    grid-area: gollery3;
+    background-image: url("/img/photo-2537605.jpeg");
+}
+.gollrey4{
+    grid-area: gollery4;
+    background-image: url("/img/photo-268jpeg.jpeg") ;
+}
+.gollrey5{
+    grid-area: gollery5;
+    background-image: url("/img/hoto-55812.jpeg");
+}
+.img-gollry{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+
+}
+@media screen and(max-width:1000px){
+    .gollery-section{
+        grid-template-areas: "gollery_1 gollery_1 gollery_2" "gollery_3 gollery_4 gollery_4" "gollery_5 gollery_5 gollery_5";
+    }
+    
+}
+
+
+.footer{
+  
+    grid-column: 1/-1;
+    margin: 1rem 0;
+    border-top:1px solid rgba(0, 0, 0, 0.603) ;
+    background-color: rgba(158, 158, 158, 0.616);
+}
+.fooer-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    padding: 2rem;
+}
+.copy{
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    text-align: center;
+    font-size: 15px;
+}
+.copy-txt{
+    color:rgb(255, 136, 0) ;
+    font-weight: bold;
+}
+.footer-titel{
+    color:rgb(255, 136, 0) ;
+}
+.miim{
+font-size: 10px;
+width: 10px;
+
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+}
+.copy-txt:hover{
+    color: blue;
+}
+.hover{
+    transition: all .5s;
+}
+.hover:hover{
+    color:rgb(255, 136, 0);
+}
+
+.in:hover{
+    transition: all .5s;
+    color: rgb(255, 17, 0);
+}
+.wa:hover{
+    transition: all .5s;
+    color: rgb(4, 23, 109);
+}
+.tel:hover{
+    transition: all .5s;
+    color: rgba(255, 187, 0, 0.87);
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn.hover-border-2::before,
+.btn.hover-border-2::after {
+  width: 10%; height: 25%;
+  transition: 0.35s;
+}
+.btn.hover-border-2::before {
+  bottom: 0; left: 0;
+  border-left: 1px solid rgb(28, 31, 30);
+  border-bottom: 1px solid rgb(28, 31, 30);
+}
+.btn.hover-border-2::after {
+  top: 0; right: 0;
+  border-right: 1px solid rgb(28, 31, 30);
+  border-top: 1px solid rgb(28, 31, 30);
+}
+.btn.hover-border-2:hover::before,
+.btn.hover-border-2:hover::after {
+  width: 99%;
+  height: 99%;
+}
+
+
